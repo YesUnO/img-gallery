@@ -1,0 +1,20 @@
+<div *ngIf="!!img.title" class="row">
+    <div class="row">
+        <h1 class="header" (click)="navigateHome()">Favorite images ></h1>
+        <h1 class="headerTitle">{{img.title}}</h1>
+    </div>
+    <div>
+        <button mat-raised-button (click)="setDetailFavorite()" [ngClass]="img.favorite ? 'activeBtn' : 'passiveBtn'">
+            Favorite
+        </button>
+    </div>
+</div>
+<div *ngIf="!img.title" class="row">
+    <h1>Favorite images</h1>
+    <div>
+        <button mat-raised-button class="filter-elements" (click)="favoriteEvent()" [ngClass]="favorite ? 'activeBtn' : 'passiveBtn'">
+            Favorite
+        </button>
+        <app-search-bar (inputEvent)="searchEvent($event)" class="filter-elements"></app-search-bar>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.header {
+  color: grey;
+  cursor: pointer;
+}
+
+.headerTitle{
+  margin-left: .2em;
+}
+
+.activeBtn{
+  background-color: lightblue;
+}
+
+.passiveBtn{
+  background-color: lightgrey;
+}
+
+.filter-elements{
+  padding-left: 15px;
+  
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+.icon{
+    font-size: medium;
+    cursor: pointer;
+    color: grey;
+}
+
+.iconActive{
+    font-size: medium;
+    cursor: pointer;
+    color: black;
+}
+
+.row{
+    width: 100%;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.card{
+    max-width: 178px;
+    color:lightgrey;
+}
+
+.title{
+    margin-left: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.img{
+    cursor: pointer;
+}

@@ -1,0 +1,6 @@
+<app-item-counter [props]="counterProps"></app-item-counter>
+<mat-grid-list cols="3">
+    <mat-grid-tile *ngFor="let img of filteredImgList">
+        <app-img-thumbnail [img]="img"></app-img-thumbnail>
+    </mat-grid-tile>
+</mat-grid-list>

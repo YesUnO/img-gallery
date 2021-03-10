@@ -1,0 +1,8 @@
+<mat-card class="card">
+    <img mat-card-image src="{{img.thumbnail}}" (click)="goToDetail(img)" class="img">
+    <mat-card-footer class="row">
+        <mat-card-subtitle class="title">{{img.title}}</mat-card-subtitle>
+        <mat-icon  [ngClass]="img.favorite ? 'iconActive':'icon'"
+            (click)="likeImg(img)">star_rate</mat-icon>
+    </mat-card-footer>
+</mat-card>
